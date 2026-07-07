@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shourya Thakur | Full Stack Developer</title>
+    <meta name="description"
+        content="I design and build fast MERN-stack websites with clean typography, careful performance work, and attention to the details users notice.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="custom-cursor" data-cursor></div>
+    <div class="custom-cursor-dot" data-cursor-dot></div>
+    <div class="scroll-progress" data-scroll-progress></div>
+    <div class="toast-stack" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="loader-overlay" data-loader>
+        <div class="loader-content">
+            <span class="loader-text" data-loader-text>SHOURYA THAKUR</span>
+            <div class="loader-bar">
+                <div class="loader-bar-fill" data-loader-fill></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="noise-bg"></div>
+    <div class="ambient-glow" data-ambient-glow></div>
+
+    <nav class="nav-container" data-nav>
+        <div class="nav-logo">
+            <span class="logo-badge">ST</span>
+            <span class="logo-text">Shourya<span>.</span>Thakur</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active" data-link>Home</a>
+            <a href="#about" class="nav-link" data-link>About</a>
+            <a href="#projects" class="nav-link" data-link>Work</a>
+            <a href="#experience" class="nav-link" data-link>Experience</a>
+            <a href="#contact" class="nav-link" data-link>Contact</a>
+        </div>
+        <a href="#contact" class="btn btn-nav" data-magnetic>Let's Talk <span class="arrow-diagonal">↗</span></a>
+        <button class="mobile-toggle" data-mobile-toggle aria-label="Toggle Menu">
+            <span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" data-mobile-menu>
+        <div class="mobile-links">
+            <a href="#hero" class="mobile-link" data-mobile-link>Home</a>
+            <a href="#about" class="mobile-link" data-mobile-link>About</a>
+            <a href="#projects" class="mobile-link" data-mobile-link>Work</a>
+            <a href="#experience" class="mobile-link" data-mobile-link>Experience</a>
+            <a href="#contact" class="mobile-link" data-mobile-link>Contact</a>
+        </div>
+    </div>
+
+    <main data-scroll-container>
+
+        <section id="hero" class="hero-section" data-section>
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-main-title">
+                        <span class="title-serif" data-split-text>Full Stack</span>
+                        <span class="title-sans-italic" data-split-text>Developer</span>
+                    </h1>
+                    <h2 class="hero-subtitle" data-fade-in>AVAILABLE FOR FREELANCE & FULL-TIME<span>.</span></h2>
+
+                    <p class="hero-paragraph" data-fade-in>
+                        Hi, I'm <strong>Shourya Thakur</strong>. I build MERN-stack websites that are fast, accessible,
+                        and easy to maintain. I pay close attention to typography, performance, and the details that
+                        shape how a product feels in use.
+                    </p>
+
+                    <div class="hero-ctas" data-fade-in>
+                        <a href="#projects" class="btn btn-primary" data-magnetic>View Selected Work <span
+                                class="btn-arrow">→</span></a>
+                        <a href="#contact" class="btn btn-secondary" data-magnetic>Get in touch</a>
+                    </div>
+
+                    <div class="hero-socials" data-fade-in>
+                        <a href="https://www.linkedin.com/in/shourya303/" target="_blank" rel="noopener"
+                            class="social-link-icon" data-magnetic>
+                            <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG16.png" alt="LinkedIn" width="20"
+                                height="20">
+                        </a>
+
+                        <a href="https://github.com/shouryaaa8" target="_blank" rel="noopener" class="social-link-icon"
+                            data-magnetic>
+                            <img src="https://cdn.simpleicons.org/github/cfa838" alt="GitHub" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-right" data-fade-in>
+                    <div class="profile-container" data-tilt-card>
+                        <div class="stack-card-glow" data-card-glow></div>
+                        <div class="profile-image-wrapper">
+                            <img src="assets/images/profile2.png" alt="Shourya Thakur" class="profile-img-fallback">
+                            <span class="profile-placeholder-text">ST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="about" class="about-section" data-section>
+            <div class="section-container">
+                <div class="about-layout-grid">
+                    <div class="about-text-column">
+                        <div class="section-index-tag" data-fade-in>— 01</div>
+                        <h2 class="section-heading-lux" data-split-text>About & Stack</h2>
+                        <p class="about-body-p" data-fade-in>
+                            I'm a full-stack developer focused on building <em>fast</em>, <em>accessible</em> products
+                            that are easy to keep improving. I pay attention to the seams: motion, empty states, and
+                            the small rough edges that change how a site feels.
+                        </p>
+                        <p class="about-body-sub-p" data-fade-in>
+                            My stack is JavaScript end to end: React on the front end, Node and Express on the server,
+                            MongoDB for data, and Tailwind when I want to move quickly. I read the docs, test the
+                            pieces that can break, and ship.
+                        </p>
+
+                        <div class="metrics-container" data-fade-in>
+                            <div class="metric-block">
+                                <span class="metric-number">3+</span>
+                                <span class="metric-label">PRODUCTION PROJECTS</span>
+                            </div>
+                            <div class="metric-block">
+                                <span class="metric-number">MERN</span>
+                                <span class="metric-label">STACK FOCUS</span>
+                            </div>
+                            <div class="metric-block">
+                                <span class="metric-number">95+</span>
+                                <span class="metric-label">LIGHTHOUSE TARGET</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stack-column">
+                        <span class="stack-block-header" data-fade-in>FRAMEWORKS & LANGUAGES</span>
+                        <div class="stack-interactive-grid">
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/react" alt="React" width="24" height="24">
+                                </div>
+                                <span class="stack-name">React.js</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" width="24"
+                                        height="24">
+                                </div>
+                                <span class="stack-name">Node.js</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/express/cfa838" alt="Express.js" width="24"
+                                        height="24">
+                                </div>
+                                <span class="stack-name">Express.js</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB" width="24" height="24">
+                                </div>
+                                <span class="stack-name">MongoDB</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS" width="24"
+                                        height="24">
+                                </div>
+                                <span class="stack-name">Tailwind CSS</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/html5" alt="HTML5" width="24" height="24">
+                                </div>
+                                <span class="stack-name">HTML5</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/css" alt="CSS3" width="24" height="24">
+                                </div>
+                                <span class="stack-name">CSS3</span>
+                            </div>
+                        </div>
+
+                        <span class="stack-block-header" data-fade-in style="margin-top: 3rem;">DEVELOPER TOOLS</span>
+                        <div class="stack-interactive-grid">
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://code.visualstudio.com/assets/branding/code-stable.png"
+                                        alt="VS Code" width="24" height="24">
+                                </div>
+                                <span class="stack-name">VS Code</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/git" alt="Git" width="24" height="24">
+                                </div>
+                                <span class="stack-name">Git</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/github/cfa838" alt="GitHub" width="24"
+                                        height="24">
+                                </div>
+                                <span class="stack-name">GitHub</span>
+                            </div>
+                            <div class="premium-stack-card" data-tilt-card>
+                                <div class="stack-card-glow" data-card-glow></div>
+                                <div class="stack-icon-wrap">
+                                    <img src="https://cdn.simpleicons.org/postman" alt="Postman" width="24" height="24">
+                                </div>
+                                <span class="stack-name">Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section" data-section>
+            <div class="section-container">
+                <div class="section-index-tag" data-fade-in>— 02</div>
+                <h2 class="section-heading-lux" data-split-text>Selected Work</h2>
+                <p class="section-subtitle-lux" data-fade-in>A few projects I took from build to launch.</p>
+
+                <div class="projects-asymmetric-stack">
+
+                    <div class="showcase-project-row" data-fade-in>
+                        <div class="showcase-visual-container" data-tilt-card>
+                            <div class="stack-card-glow" data-card-glow></div>
+                            <div class="showcase-asset-mock"
+                                style="background: linear-gradient(135deg, #1a1510 0%, #0d0a08 100%);">
+                                <div class="mock-inner-visual-bags">
+                                    <img src="assets/images/foreverbuy.png" alt="buy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-details-container">
+                            <!-- <span class="showcase-num-tag">01</span> -->
+                            <h3 class="showcase-title">ForeverBuy</h3>
+                            <p class="showcase-desc">
+                                A full-stack e-commerce platform featuring product browsing, keyword filtering, cart
+                                management, order placement and history, JWT authentication, and a complete admin
+                                dashboard for product and order management.
+                            </p>
+                            <div class="showcase-tech-inline">
+                                <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+                            </div>
+                            <div class="showcase-actions">
+                                <a href="https://forever-frontend-peach-tau.vercel.app/" target="_blank" rel="noopener"
+                                    class="btn btn-primary btn-sm" data-magnetic>Live Demo <span
+                                        class="arrow-diagonal">↗</span></a>
+                                <a href="https://github.com/shouryaaa8/ForeverBuy" target="_blank" rel="noopener"
+                                    class="btn btn-secondary btn-sm" data-magnetic>GitHub 🐙</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-project-row row-reverse" data-fade-in>
+                        <div class="showcase-visual-container" data-tilt-card>
+                            <div class="stack-card-glow" data-card-glow></div>
+                            <div class="showcase-asset-mock"
+                                style="background: linear-gradient(135deg, #11161b 0%, #080b0e 100%);">
+                                <div class="mock-inner-visual-bags">
+                                    <img src="assets/images/blogspot.png" alt="blog">
+                                </div>
+                            </div>
+                            <!-- <div class="showcase-floating-metadata">BACKEND • CMS</div> -->
+                        </div>
+                        <div class="showcase-details-container">
+                            <!-- <span class="showcase-num-tag">02</span> -->
+                            <h3 class="showcase-title">Blog Spot</h3>
+                            <p class="showcase-desc">
+                                A secure blogging platform with authentication, post creation, editing and deletion,
+                                Multer file uploads, MongoDB storage, and JWT-based security throughout.
+                            </p>
+                            <div class="showcase-tech-inline">
+                                <span>Node.js</span><span>Express</span><span>MongoDB</span><span>EJS</span>
+                            </div>
+                            <div class="showcase-actions">
+                                <a href="https://blop-spot-1.onrender.com/" target="_blank" rel="noopener"
+                                    class="btn btn-primary btn-sm" data-magnetic>Live Demo <span
+                                        class="arrow-diagonal">↗</span></a>
+                                <a href="https://github.com/shouryaaa8/BLOP_SPOT" target="_blank" rel="noopener"
+                                    class="btn btn-secondary btn-sm" data-magnetic>GitHub 🐙</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-project-row" data-fade-in>
+                        <div class="showcase-visual-container" data-tilt-card>
+                            <div class="stack-card-glow" data-card-glow></div>
+                            <div class="showcase-asset-mock"
+                                style="background: linear-gradient(135deg, #16111a 0%, #0b080e 100%);">
+                                <div class="mock-inner-visual-bags">
+                                    <img src="assets/images/focusontoday.png" alt="focus">
+                                </div>
+                            </div>
+                            <!-- <div class="showcase-floating-metadata">FRONTEND • PRODUCTIVITY</div> -->
+                        </div>
+                        <div class="showcase-details-container">
+                            <!-- <span class="showcase-num-tag">03</span> -->
+                            <h3 class="showcase-title">Focus on Today</h3>
+                            <p class="showcase-desc">
+                                A lightweight productivity app for task management with local storage persistence,
+                                real-time DOM updates, fully responsive design, and a 95+ Lighthouse performance score.
+                            </p>
+                            <div class="showcase-tech-inline">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                            </div>
+                            <div class="showcase-actions">
+                                <a href="https://shouryaaa8.github.io/Focus_on_Today/" target="_blank" rel="noopener"
+                                    class="btn btn-primary btn-sm" data-magnetic>Live Demo <span
+                                        class="arrow-diagonal">↗</span></a>
+                                <a href="https://github.com/shouryaaa8/Focus_on_Today" target="_blank" rel="noopener"
+                                    class="btn btn-secondary btn-sm" data-magnetic>GitHub 🐙</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section" data-section>
+            <div class="section-container">
+                <div class="section-index-tag" data-fade-in>— 03</div>
+                <h2 class="section-heading-lux" data-split-text>Experience</h2>
+
+                <div class="premium-experience-timeline-box" data-fade-in data-reactive-card>
+                    <div class="experience-interactive-glow" data-card-glow></div>
+                    <div class="experience-card-header">
+                        <div class="exp-role-title-group">
+                            <h3 class="experience-main-role">Orfiq AI Solutions Ltd</h3>
+                            <span class="experience-sub-role">Full Stack Developer Intern</span>
+                        </div>
+                        <div class="experience-date-badge">
+                            <span class="date-dot"></span> April 2026
+                        </div>
+                    </div>
+
+                    <ul class="experience-bullet-list">
+                        <li>Built React, Node, and Express features for production screens and backend flows.</li>
+                        <li>Created REST APIs used by dynamic UI sections.</li>
+                        <li>Tracked down backend bugs and tightened application stability.</li>
+                        <li>Worked with Azure-hosted databases in production.</li>
+                        <li>Used Git for feature branches, reviews, and handoffs.</li>
+                    </ul>
+
+                    <div class="experience-tags-footer">
+                        <span>React</span><span>Node.js</span><span>Express</span><span>REST</span><span>Azure</span><span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section" data-section>
+            <div class="section-container">
+                <div class="section-index-tag" data-fade-in>— 04</div>
+                <h2 class="section-heading-lux" data-split-text>What Clients Say</h2>
+                <p class="section-subtitle-lux" data-fade-in>Feedback from clients after launch.</p>
+
+                <div class="testimonials-grid" data-fade-in>
+                    <article class="testimonial-card" data-tilt-card>
+                        <div class="stack-card-glow" data-card-glow></div>
+                        <div class="testimonial-top">
+                            <div class="testimonial-avatar" aria-hidden="true">
+                                <img src="assets/images/test1.png" alt="Sarah Johnson"/>
+                            </div>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-name">Gaurav Nema</div>
+                                <div class="testimonial-role">Founder, Nishaad Music Classes</div>
+                            </div>
+                            <div class="testimonial-badge">Business Website</div>
+                        </div>
+
+                        <div class="testimonial-rating" aria-hidden="true">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-body">"Working with him was a great experience. He delivered a fast, modern, and responsive website that exceeded our expectations. Communication was excellent throughout the project, and every requirement was implemented perfectly."</p>
+                    </article>
+
+                    <article class="testimonial-card" data-tilt-card>
+                        <div class="stack-card-glow" data-card-glow></div>
+                        <div class="testimonial-top">
+                            <div class="testimonial-avatar" aria-hidden="true">
+                                <img src="assets/images/test2.png" alt="Michael Carter"/>
+                            </div>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-name">Chitra Malolan</div>
+                                <div class="testimonial-role">CPO, Orfiq AI Solutions Ltd</div>
+                            </div>
+                            <div class="testimonial-badge">Corporate Website</div>
+                        </div>
+
+                        <div class="testimonial-rating" aria-hidden="true">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-body">"Our website performance improved dramatically after the redesign. The attention to detail, clean code, and scalable architecture make future updates incredibly easy. Highly recommended."</p>
+                    </article>
+
+                    <article class="testimonial-card" data-tilt-card>
+                        <div class="stack-card-glow" data-card-glow></div>
+                        <div class="testimonial-top">
+                            <div class="testimonial-avatar" aria-hidden="true">
+                                <img src="assets/images/test3.png" alt="Emily Rodriguez"/>
+                            </div>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-name">Shivam Mudaliar</div>
+                                <div class="testimonial-role">Founder, Meenu's Dosa</div>
+                            </div>
+                            <div class="testimonial-badge">E-commerce Website</div>
+                        </div>
+
+                        <div class="testimonial-rating" aria-hidden="true">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p class="testimonial-body">"From planning to deployment, everything was handled professionally. The website looks premium, loads quickly, and works flawlessly across devices. We'll definitely work together again."</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section" data-section>
+            <div class="section-container">
+                <div class="section-index-tag" data-fade-in>— 05</div>
+                <h2 class="section-heading-lux" data-split-text>Frequently Asked Questions</h2>
+                <p class="section-subtitle-lux" data-fade-in>The questions I usually get before a project starts.</p>
+
+                <div class="faq-accordion" role="region" aria-label="Frequently Asked Questions" data-fade-in>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">How long does it take to build a website? <span class="faq-chevron">▾</span></button>
+                        <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn">Timelines depend on the scope. A standard business website usually takes 1-3 weeks. Larger web apps take longer, especially if there are more features or rounds of feedback.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">Do you build responsive websites? <span class="faq-chevron">▾</span></button>
+                        <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn">Yes. I build for desktop, tablet, and mobile from the start, so the layout holds up on every screen size.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">Can you redesign my existing website? <span class="faq-chevron">▾</span></button>
+                        <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn">Yes. I can update the design, speed, responsiveness, SEO, and accessibility without breaking the parts you already rely on.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq4" id="faq4-btn">Will my website be optimized for SEO and performance? <span class="faq-chevron">▾</span></button>
+                        <div id="faq4" class="faq-answer" role="region" aria-labelledby="faq4-btn">Yes. I use semantic HTML, optimized images, responsive layouts, and accessibility checks so the site loads quickly and stays easy to crawl.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq5" id="faq5-btn">Do you provide support after the website is completed? <span class="faq-chevron">▾</span></button>
+                        <div id="faq5" class="faq-answer" role="region" aria-labelledby="faq5-btn">Yes. I stay available after launch for bug fixes, small updates, and maintenance if something needs attention.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-section>
+            <div class="section-container">
+                <div class="contact-section-split-grid">
+                    <div class="contact-meta-left-pane">
+                        <div class="section-index-tag" data-fade-in>— 06</div>
+                        <h2 class="section-heading-lux" data-split-text>Let's build something</h2>
+                        <p class="contact-invite-p" data-fade-in>Got a product worth crafting? I read every message.</p>
+
+                        <form class="premium-form-architecture" action="https://api.web3forms.com/submit" method="POST"
+                            data-fade-in data-contact-form>
+                            <input type="hidden" name="access_key" value="eeda37d9-e108-4a89-87a3-84d4759d7015">
+
+                            <div class="input-component-wrapper">
+                                <input type="text" id="form-name" name="name" class="premium-input-field"
+                                    placeholder=" " required>
+                                <label for="form-name" class="premium-floating-label">Your name</label>
+                                <div class="input-baseline-border"></div>
+                            </div>
+
+                            <div class="input-component-wrapper">
+                                <input type="email" id="form-email" name="email" class="premium-input-field"
+                                    placeholder=" " required>
+                                <label for="form-email" class="premium-floating-label">Email address</label>
+                                <div class="input-baseline-border"></div>
+                            </div>
+
+                            <div class="input-component-wrapper">
+                                <textarea id="form-message" name="message" class="premium-input-field text-area-field"
+                                    rows="4" placeholder=" " required></textarea>
+                                <label for="form-message" class="premium-floating-label">Tell me about your
+                                    project</label>
+                                <div class="input-baseline-border"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-action-btn" data-magnetic>
+                                Send Message <span class="send-icon-diagonal">↗</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-details-right-pane" data-fade-in>
+                        <div class="quote-container-box">
+                            <span class="quote-mark">“</span>
+                            <p class="quote-text-content">I give side projects the same attention as client work. Email
+                                is the fastest way to reach me.</p>
+                        </div>
+
+                        <div class="direct-email-anchor-wrap">
+                            <button type="button" class="huge-email-link" data-email-copy
+                                data-email-copy-value="shouryathakur303@gmail.com"
+                                data-copy-label-default="Copy email" data-copy-label-copied="✓ Copied!"
+                                data-magnetic aria-label="Copy email address to clipboard">
+                                shouryathakur303@gmail.com
+                            </button>
+                        </div>
+
+                        <div class="info-meta-footer-row">
+                            <div class="meta-footer-card">
+                                <span class="m-lbl">BASED IN</span>
+                                <span class="m-val">India • Remote</span>
+                            </div>
+                            <div class="meta-footer-card">
+                                <span class="m-lbl">RESPONSE</span>
+                                <span class="m-val">&lt; 24 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="production-site-footer">
+                    <span class="copyright-notice">© 2026 Shourya Thakur</span>
+                    <span class="crafted-notice">Built with care</span>
+                    <a href="#hero" class="back-to-top-trigger" data-magnetic>Back to top ↑</a>
+                </footer>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
