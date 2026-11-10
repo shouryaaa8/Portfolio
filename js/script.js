@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initLenisSmoothScroll();
   initPreloaderSequence();
   initHardwareCursor();
+  initTestimonialsMarquee();
   initAmbientLightingShader();
   initNavigationModule();
   initContactFormToasts();
@@ -147,6 +148,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+  }
+
+  function initTestimonialsMarquee() {
+    const marquee = document.querySelector("[data-testimonials-marquee]");
+    const track = marquee?.querySelector("[data-testimonials-track]");
+    const group = track?.querySelector(".testimonials-group");
+
+    if (!marquee || !track || !group || prefersReducedMotion) return;
+
+    const duplicate = group.cloneNode(true);
+    duplicate.setAttribute("aria-hidden", "true");
+    duplicate
+      .querySelectorAll("[data-tilt-card], [data-card-glow]")
+      .forEach((element) => {
+        element.removeAttribute("data-tilt-card");
+        element.removeAttribute("data-card-glow");
+      });
+
+    track.append(duplicate);
+    marquee.classList.add("is-animated");
   }
 
   // Interface Navigation Intersections Module

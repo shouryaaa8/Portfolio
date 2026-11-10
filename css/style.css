@@ -1556,11 +1556,24 @@ body::-webkit-scrollbar-thumb {
     padding-top: 6rem;
 }
 
-.testimonials-grid {
+.testimonials-marquee {
+    overflow: hidden;
+    margin-top: 2.5rem;
+}
+
+.testimonials-marquee:focus-visible {
+    outline: 1px solid var(--accent-gold);
+    outline-offset: 6px;
+}
+
+.testimonials-track {
+    width: 100%;
+}
+
+.testimonials-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    margin-top: 2.5rem;
 }
 
 .testimonial-card {
@@ -1574,6 +1587,35 @@ body::-webkit-scrollbar-thumb {
     gap: 1rem;
     min-height: 320px;
     transition: transform 0.45s cubic-bezier(0.16,1,0.3,1), border-color 0.45s;
+}
+
+.testimonials-marquee.is-animated .testimonials-track {
+    display: flex;
+    width: max-content;
+    animation: testimonial-marquee 42s linear infinite;
+}
+
+.testimonials-marquee.is-animated:hover .testimonials-track,
+.testimonials-marquee.is-animated:focus-within .testimonials-track {
+    animation-play-state: paused;
+}
+
+.testimonials-marquee.is-animated .testimonials-group {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 2.5rem;
+    width: max-content;
+    padding-right: 2.5rem;
+}
+
+.testimonials-marquee.is-animated .testimonial-card {
+    flex: 0 0 clamp(280px, 34vw, 390px);
+}
+
+@keyframes testimonial-marquee {
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .testimonial-card:hover {
@@ -1692,18 +1734,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1024px) {
-    .testimonials-grid {
+    .testimonials-marquee:not(.is-animated) .testimonials-group {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .testimonials-grid {
+    .testimonials-marquee:not(.is-animated) .testimonials-group {
         grid-template-columns: 1fr;
     }
 
     .testimonial-card {
         min-height: auto;
+    }
+
+    .testimonials-marquee.is-animated .testimonials-group {
+        gap: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .testimonials-marquee.is-animated .testimonial-card {
+        flex-basis: min(82vw, 360px);
     }
 
     .section-container {
