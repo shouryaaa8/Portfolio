@@ -1024,6 +1024,7 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--bg-surface);
     border: 1px solid var(--border-color);
     padding: 4.5rem;
+    margin-top: 3rem;
     position: relative;
     overflow: hidden;
     transform-style: preserve-3d;
