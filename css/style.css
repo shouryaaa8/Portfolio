@@ -362,6 +362,10 @@ body::-webkit-scrollbar-thumb {
     gap: 0.75rem;
 }
 
+.nav-logo a {
+    text-decoration: none;
+}
+
 .logo-badge {
     background-color: #111;
     border: 1px solid var(--border-color-hover);
